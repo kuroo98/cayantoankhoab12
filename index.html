@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4ecd9" />
+  <meta name="description" content="Cây an toàn người bệnh B12 – mỗi lời nhắn là một chiếc lá." />
+  <title>Cây an toàn người bệnh B12</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">A little place for kind words</span>
+        <h1>Cây an toàn người bệnh B12</h1>
+        <p>Mỗi lời nhắn bạn gửi đi sẽ hóa thành một chiếc lá.<br>Chạm vào một chiếc lá để đọc câu chuyện phía sau.</p>
+      </div>
+      <div class="hero-actions">
+        <button class="admin-entry" id="adminEntry" type="button">Quản trị</button>
+        <div class="leaf-count" aria-live="polite">
+          <span id="leafCount">0</span>
+          <small>chiếc lá</small>
+        </div>
+      </div>
+    </header>
+
+    <section class="tree-card" aria-label="Cây an toàn người bệnh B12">
+      <div class="tree-stage" id="treeStage">
+        <div class="sky-grain"></div>
+        <div class="sun-glow"></div>
+        <div class="soft-cloud cloud-one"></div>
+        <div class="soft-cloud cloud-two"></div>
+
+        <svg class="tree-svg" viewBox="0 0 900 760" role="img" aria-label="Một cây cổ thụ với nhiều cành nhỏ">
+          <defs>
+            <linearGradient id="trunkMain" x1="0" y1="0" x2="1" y2="0.8">
+              <stop offset="0" stop-color="#4e3427" />
+              <stop offset="0.22" stop-color="#76513a" />
+              <stop offset="0.52" stop-color="#8f6040" />
+              <stop offset="0.78" stop-color="#68432f" />
+              <stop offset="1" stop-color="#463025" />
+            </linearGradient>
+            <linearGradient id="barkLight" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#b17a51" stop-opacity=".55" />
+              <stop offset="1" stop-color="#b17a51" stop-opacity="0" />
+            </linearGradient>
+            <radialGradient id="groundGlow">
+              <stop offset="0" stop-color="#6d7250" stop-opacity=".22" />
+              <stop offset="1" stop-color="#6d7250" stop-opacity="0" />
+            </radialGradient>
+            <filter id="treeShadow" x="-30%" y="-30%" width="160%" height="170%">
+              <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#413826" flood-opacity=".18" />
+            </filter>
+            <filter id="branchSoft" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation=".12" />
+            </filter>
+          </defs>
+
+          <ellipse cx="450" cy="708" rx="300" ry="55" fill="url(#groundGlow)" />
+
+          <g filter="url(#treeShadow)">
+            <!-- Main trunk -->
+            <path d="M431 706 C416 650 419 608 433 559 C448 504 451 455 433 410 C419 376 404 352 387 326 C374 307 375 292 389 286 C408 278 424 292 439 315 C460 346 484 383 495 418 C505 451 503 492 495 529 C486 572 487 627 508 706 Z" fill="url(#trunkMain)" />
+            <path d="M445 696 C438 623 450 567 465 520 C476 484 472 443 457 407 C445 378 427 340 412 318" fill="none" stroke="url(#barkLight)" stroke-width="12" stroke-linecap="round" opacity=".65" />
+
+            <!-- Major limbs -->
+            <g fill="none" stroke="url(#trunkMain)" stroke-linecap="round">
+              <path d="M444 463 C393 421 333 380 265 352 C220 333 190 307 166 274" stroke-width="30" />
+              <path d="M481 472 C531 426 589 389 657 355 C704 332 733 300 753 261" stroke-width="29" />
+              <path d="M462 423 C437 365 427 306 438 237 C445 198 444 172 430 147" stroke-width="26" />
+              <path d="M483 407 C516 350 548 292 555 225 C559 191 569 164 589 140" stroke-width="24" />
+              <path d="M401 386 C356 342 320 287 308 230 C302 201 292 177 268 156" stroke-width="22" />
+              <path d="M548 375 C597 334 638 288 659 239 C670 213 688 190 709 176" stroke-width="21" />
+              <path d="M345 348 C304 327 270 298 242 267 C225 248 209 237 187 230" stroke-width="16" />
+              <path d="M614 320 C658 301 696 271 722 237" stroke-width="16" />
+              <path d="M378 443 C332 421 287 400 236 397 C210 395 190 385 175 369" stroke-width="14" />
+              <path d="M586 425 C635 405 681 394 730 400 C754 403 775 395 791 378" stroke-width="14" />
+            </g>
+
+            <!-- fine branchlets -->
+            <g fill="none" stroke="#6f4a35" stroke-width="9" stroke-linecap="round" opacity=".92" filter="url(#branchSoft)">
+              <path d="M265 352 C247 326 234 298 229 267" />
+              <path d="M309 369 C293 340 286 312 286 284" />
+              <path d="M659 355 C679 332 688 306 690 276" />
+              <path d="M706 332 C731 315 743 294 746 272" />
+              <path d="M438 238 C424 212 416 189 416 164" />
+              <path d="M556 226 C552 201 557 178 571 157" />
+              <path d="M308 230 C286 210 269 188 258 166" />
+              <path d="M659 240 C676 219 693 204 716 194" />
+              <path d="M235 397 C214 385 194 376 175 375" />
+              <path d="M731 400 C751 392 770 382 784 366" />
+            </g>
+
+            <!-- bark texture -->
+            <g fill="none" stroke-linecap="round" opacity=".24">
+              <path d="M452 665 C448 621 454 582 466 547" stroke="#e7bb91" stroke-width="4" />
+              <path d="M476 677 C470 624 478 575 491 531" stroke="#2f2019" stroke-width="4" />
+              <path d="M428 564 C419 529 420 502 427 476" stroke="#d6a77d" stroke-width="3" />
+              <path d="M392 337 C365 322 337 298 318 273" stroke="#d6a77d" stroke-width="3" />
+              <path d="M527 368 C554 345 578 320 598 293" stroke="#d6a77d" stroke-width="3" />
+            </g>
+
+            <!-- roots -->
+            <g fill="none" stroke="url(#trunkMain)" stroke-linecap="round">
+              <path d="M451 698 C407 711 367 720 328 719" stroke-width="17" />
+              <path d="M475 700 C520 714 564 722 613 717" stroke-width="18" />
+              <path d="M432 701 C402 725 374 737 352 741" stroke-width="11" />
+              <path d="M499 702 C534 730 560 739 585 742" stroke-width="12" />
+            </g>
+          </g>
+        </svg>
+
+        <div class="leaf-layer" id="leafLayer"></div>
+
+        <div class="ground-leaves" aria-hidden="true">
+          <span class="fallen-leaf fallen-gold"></span>
+          <span class="fallen-leaf fallen-olive"></span>
+          <span class="fallen-leaf fallen-dry"></span>
+        </div>
+
+        <div class="empty-tree" id="emptyTree">
+          <div class="empty-icon leaf-spark">✦</div>
+          <strong>Chiếc lá đầu tiên đang chờ bạn</strong>
+          <span>Hãy gửi một lời nhắn thật dịu dàng.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-panel" id="adminPanel" hidden aria-label="Công cụ quản trị">
+      <div>
+        <strong>Chế độ quản trị đang bật</strong>
+        <span>Bạn có thể mở từng chiếc lá để chỉnh sửa nội dung, thời gian viết hoặc xóa lá; cũng có thể xóa toàn bộ cây.</span>
+      </div>
+      <div class="admin-panel-actions">
+        <button class="danger-button" id="deleteAllButton" type="button">Xóa toàn bộ lá</button>
+        <button class="quiet-button" id="logoutButton" type="button">Đăng xuất</button>
+      </div>
+      <p class="admin-status" id="adminStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="composer-card" aria-labelledby="composerTitle">
+      <div class="composer-heading">
+        <div>
+          <span class="section-kicker">Gửi một điều tử tế</span>
+          <h2 id="composerTitle">Thêm lời nhắn mới</h2>
+        </div>
+        <span class="leaf-icon">🍂</span>
+      </div>
+
+      <form id="messageForm" novalidate>
+        <div class="field-row">
+          <label class="field">
+            <span>Tên của bạn <em>không bắt buộc</em></span>
+            <input id="authorInput" name="author" type="text" maxlength="60" autocomplete="name" placeholder="Ví dụ: Minh" />
+          </label>
+          <label class="field">
+            <span>Lời nhắn</span>
+            <textarea id="messageInput" name="message" maxlength="500" required placeholder="Viết điều bạn muốn gửi đến ai đó…"></textarea>
+            <small class="counter"><span id="messageCount">0</span>/500</small>
+          </label>
+        </div>
+        <input id="websiteInput" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="form-footer">
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          <button class="send-button" id="sendButton" type="submit">
+            <span>Thả chiếc lá</span>
+            <span class="send-arrow">↗</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">Một nơi nhỏ để giữ lại những lời đẹp.</footer>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <article class="message-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Đóng">×</button>
+      <span class="modal-date" id="modalDate" hidden></span>
+      <h2 id="modalTitle">Lời nhắn</h2>
+      <p id="modalMessage"></p>
+      <div class="modal-author" id="modalAuthor"></div>
+      <div class="modal-admin-actions" id="modalAdminActions" hidden>
+        <button class="quiet-button" id="editMessageButton" type="button">Chỉnh sửa lá</button>
+        <button class="modal-delete" id="deleteMessageButton" type="button">Xóa chiếc lá này</button>
+      </div>
+      <form class="edit-form" id="editMessageForm" hidden novalidate>
+        <label class="field">
+          <span>Tên người viết</span>
+          <input id="editAuthor" type="text" maxlength="60" placeholder="Ẩn danh" />
+        </label>
+        <label class="field">
+          <span>Thời gian viết</span>
+          <input id="editCreatedAt" type="datetime-local" step="60" required />
+        </label>
+        <label class="field">
+          <span>Nội dung lời nhắn</span>
+          <textarea id="editMessage" maxlength="500" required></textarea>
+          <small class="counter"><span id="editMessageCount">0</span>/500</small>
+        </label>
+        <p class="form-status" id="editStatus" role="status" aria-live="polite"></p>
+        <div class="edit-actions">
+          <button class="quiet-button" id="cancelEditButton" type="button">Hủy</button>
+          <button class="send-button" id="saveEditButton" type="submit">Lưu thay đổi</button>
+        </div>
+      </form>
+    </article>
+  </div>
+
+  <div class="modal-backdrop" id="loginBackdrop" hidden>
+    <article class="message-modal login-modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="modal-close" id="loginClose" type="button" aria-label="Đóng">×</button>
+      <span class="section-kicker">Khu vực bảo vệ</span>
+      <h2 id="loginTitle">Đăng nhập quản trị</h2>
+      <form id="adminLoginForm">
+        <label class="field">
+          <span>Tài khoản</span>
+          <input id="adminUsername" name="username" type="text" autocomplete="username" required />
+        </label>
+        <label class="field">
+          <span>Mật khẩu</span>
+          <input id="adminPassword" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p class="form-status" id="loginStatus" role="status" aria-live="polite"></p>
+        <button class="send-button" id="loginButton" type="submit">Đăng nhập</button>
+      </form>
+    </article>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
